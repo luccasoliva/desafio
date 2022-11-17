@@ -93,6 +93,7 @@ public class FuncionarioServiceImpl implements IFuncionarioService {
     @Override
     public void funcionarioMaisVelho() {
         System.out.println(spc);
+        System.out.println("Funcionário mais velho:");
         System.out.println(funcionarios
                 .stream()
                 .min((funcionario1, funcionario2) -> ((Funcionario) funcionario1)
