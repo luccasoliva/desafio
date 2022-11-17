@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FuncionarioService implements IFuncionarioService {
+public class FuncionarioServiceImpl implements IFuncionarioService {
     List<Object> funcionarios = new ArrayList<Object>();
     String spc = "---------------------------------------------------------------------------------------------------";
 
@@ -27,6 +27,7 @@ public class FuncionarioService implements IFuncionarioService {
         funcionarios.add(funcionario = new Funcionario("Heloísa", LocalDate.of(2003,5,24), new BigDecimal("1606.85"),"Eletricista"));
         funcionarios.add(funcionario = new Funcionario("Helena", LocalDate.of(1996,9,2), new BigDecimal("2799.93"),"Gerente"));
     }
+
     @Override
     public void mostrarTodosFuncionarios(){
         System.out.println(spc);
