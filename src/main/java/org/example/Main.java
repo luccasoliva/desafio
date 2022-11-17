@@ -2,11 +2,10 @@ package org.example;
 
 import org.example.services.FuncionarioServiceImpl;
 
-import java.io.IOException;
 import java.math.BigDecimal;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         FuncionarioServiceImpl funcionarioService = new FuncionarioServiceImpl();
         funcionarioService.adicionarFuncionarios();
         funcionarioService.deletarFuncionarioPeloNome("João");
